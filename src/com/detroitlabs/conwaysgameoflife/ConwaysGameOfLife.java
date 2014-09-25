@@ -6,10 +6,14 @@ package com.detroitlabs.conwaysgameoflife;
 public class ConwaysGameOfLife {
     public static void main(String[] args) {
 
+
         Grid ConwayGrid = new Grid();
+        final boolean _ = false;
+        final boolean X = true;
+
 
         boolean[][] theSetup = {
-                {false, false, false, false, false},
+                {_, _, _, _, _},
                 {false, false, true, false, false},
                 {false, false, true, false, false},
                 {false, false, true, false, false},
@@ -17,5 +21,15 @@ public class ConwaysGameOfLife {
         };
 
         ConwayGrid.setGrid(theSetup);
+
+        int t, i;
+        for (t=0; t<5; ++t) {
+            for (i=0; i<5; ++i) {
+                System.out.print(theSetup[t][i] + " ");
+            }
+            System.out.println();
+        }
     }
 }
+
+
