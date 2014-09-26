@@ -1,5 +1,7 @@
 package com.detroitlabs.conwaysgameoflife;
 
+import com.sun.tools.javac.util.List;
+
 import java.util.ArrayList;
 
 /**
@@ -73,6 +75,6 @@ public class Conway {
     }
 
     public ArrayList makeNeighborCellsList(boolean currentCell) {
-        ArrayList<boolean> neighborCells = new ArrayList<boolean> //You can't make an arraylist of primitive types, can you? Snap!!
+        List<Boolean> neighborCells = new List<Boolean>(); //You can't make an arraylist of primitive types, can you? Snap!!
     }
 }
