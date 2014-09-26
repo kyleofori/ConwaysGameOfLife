@@ -23,10 +23,16 @@ public class ConwaysGameOfLife {
         ConwayGrid.setGrid(theSetup);
 
         int t, i;
-        for (t=0; t<5; ++t) {
-            for (i=0; i<5; ++i) {
-                if (theSetup[t][i] = true)
-                System.out.print(theSetup[t][i] + " ");
+        for (t=0; t<5; t++) {
+            for (i=0; i<5; i++) {
+                if (theSetup[t][i])
+                {
+                    System.out.print("\u2b1b");
+                }
+                else
+                {
+                    System.out.print("\u2b1c");
+                }
             }
             System.out.println();
         }
