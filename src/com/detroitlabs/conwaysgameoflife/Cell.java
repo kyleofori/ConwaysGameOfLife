@@ -11,4 +11,12 @@ public class Cell {
     public Cell(boolean alive) {
         this.alive = alive;
     }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+
+    public boolean getAlive() {
+        return alive;
+    }
 }
