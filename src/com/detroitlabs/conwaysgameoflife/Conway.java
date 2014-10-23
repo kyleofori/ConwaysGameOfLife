@@ -17,11 +17,12 @@ public class Conway {
         //for(boolean x: ConwaysGameOfLife.ConwayGrid.getGrid()) {   //<--Why isn't this working??
         //see chapter on arrays for rules on for-each loops of multidimensional arrays
             //change grid according to the rules
-        int t,i;
+        int t = 0, i = 0;
+        int cTL = countTheLiving(makeNeighborCellsList(grid, t, i));
         for(t=0; t<5; t++) {
             for (i=0; i<5; i++) {
                 if(grid.getGrid()[t][i].getAlive()) {
-                    if(/*has 0, 1, or 4-8 living neighbors*/)
+                    if(cTL==0 || cTL==1 || cTL>4/*has 0, 1, or 4-8 living neighbors*/)
                     {
                         //cell should die
                         grid.getGrid()[t][i].setAlive(false);
@@ -29,7 +30,7 @@ public class Conway {
                 }
                 else
                 {
-                    if(/*has 3 living neighbors*/)
+                    if(cTL == 3)
                     {
                         //cell comes to life
                         grid.getGrid()[t][i].setAlive(true);
@@ -85,5 +86,14 @@ public class Conway {
         neighborCells.add(getSCell(grid, t, i));
         neighborCells.add(getSECell(grid, t, i));
         return neighborCells;
+    }
+
+    public int countTheLiving(ArrayList<Cell> makeNeighborCellsList) {
+        int i = 0;
+        for (Cell x: makeNeighborCellsList) {
+            x.getAlive();
+            i++;
+        }
+        return i;
     }
 }
