@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcf6f846-3a96-4518-939b-b0405ee1d373" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/Conway.java" afterPath="$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/Conway.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java" afterPath="$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java" />
     </list>
     <ignored path="ConwaysGameOfLife.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="ConwaysGameOfLife.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="975">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="945">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -502,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="975">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="945">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding />
         </state>
       </provider>

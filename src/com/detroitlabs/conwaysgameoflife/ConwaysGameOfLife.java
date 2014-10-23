@@ -8,8 +8,6 @@ public class ConwaysGameOfLife {
 
 
         Grid ConwayGrid = new Grid();
-//        final boolean _ = false;
-
 
         boolean[][] theSetup = {
                 {false, false, false, false, false},
