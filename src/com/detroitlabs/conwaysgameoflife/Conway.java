@@ -22,11 +22,10 @@ public class Conway {
         for(t=0; t<5; t++) {
             for (i=0; i<5; i++) {
                 if(grid.getGrid()[t][i].getAlive()) {
-                    if(cTL==0 || cTL==1 || cTL>4/*has 0, 1, or 4-8 living neighbors*/)
-                    {
-                        //cell should die
+                    if((cTL >= 0 && cTL <= 1) || (cTL >= 4 && cTL <= 8)) {  //has 0, 1, or 4-8 living neighbors
+                        //cell should die,
                         grid.getGrid()[t][i].setAlive(false);
-                    } //otherwise the cell stays alive
+                    } //otherwise the cell stays alive.
                 }
                 else
                 {
