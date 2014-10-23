@@ -29,8 +29,7 @@ public class Conway {
                 }
                 else
                 {
-                    if(cTL == 3)
-                    {
+                    if(cTL == 3) {
                         //cell comes to life
                         grid.getGrid()[t][i].setAlive(true);
                     } // otherwise the cell stays dead
