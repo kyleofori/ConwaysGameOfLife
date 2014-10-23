@@ -9,7 +9,7 @@ public class ConwaysGameOfLife {
 
         Grid ConwayGrid = new Grid();
 //        final boolean _ = false;
-//        final boolean X = true;
+        final boolean X = true;
 
 
         boolean[][] theSetup = {

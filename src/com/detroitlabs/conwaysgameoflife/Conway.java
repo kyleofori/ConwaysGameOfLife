@@ -42,41 +42,48 @@ public class Conway {
         return gridOnDeck;
     }
 
-    public boolean getECell(Grid grid, int t, int i) {
-        return grid.getGrid()[t][i+1].getAlive();
+    public Cell getECell(Grid grid, int t, int i) {
+        return grid.getGrid()[t][i+1];
     }
 
-    public boolean getNECell(Grid grid, int t, int i) {
-        return grid.getGrid()[t-1][i+1].getAlive();
+    public Cell getNECell(Grid grid, int t, int i) {
+        return grid.getGrid()[t-1][i+1];
     }
 
-    public boolean getNCell(Grid grid, int t, int i) {
-        return grid.getGrid()[t-1][i].getAlive();
+    public Cell getNCell(Grid grid, int t, int i) {
+        return grid.getGrid()[t-1][i];
     }
 
-    public boolean getNWCell(Grid grid, int t, int i) {
-        return grid.getGrid()[t-1][i-1].getAlive();
+    public Cell getNWCell(Grid grid, int t, int i) {
+        return grid.getGrid()[t-1][i-1];
     }
 
-    public boolean getWCell(Grid grid, int t, int i) {
-        return grid.getGrid()[t][i-1].getAlive();
+    public Cell getWCell(Grid grid, int t, int i) {
+        return grid.getGrid()[t][i-1];
     }
 
-    public boolean getSWCell(Grid grid, int t, int i) {
-        return grid.getGrid()[t+1][i-1].getAlive();
+    public Cell getSWCell(Grid grid, int t, int i) {
+        return grid.getGrid()[t+1][i-1];
     }
 
-    public boolean getSCell(Grid grid, int t, int i) {
-        return grid.getGrid()[t+1][i].getAlive();
+    public Cell getSCell(Grid grid, int t, int i) {
+        return grid.getGrid()[t+1][i];
     }
 
-    public boolean getSECell(Grid grid, int t, int i) {
-        return grid.getGrid()[t+1][i+1].getAlive();
+    public Cell getSECell(Grid grid, int t, int i) {
+        return grid.getGrid()[t+1][i+1];
     }
 
-    public ArrayList makeNeighborCellsList(boolean currentCell) {
+    public ArrayList makeNeighborCellsList(Grid grid, int t, int i) {
         ArrayList<Cell> neighborCells = new ArrayList<Cell>();
-
+        neighborCells.add(getECell(grid, t, i));  //arguments: grid, int t, int i (last two for cell position).
+        neighborCells.add(getNECell(grid, t, i));
+        neighborCells.add(getNCell(grid, t, i));
+        neighborCells.add(getNWCell(grid, t, i));
+        neighborCells.add(getWCell(grid, t, i));
+        neighborCells.add(getSWCell(grid, t, i));
+        neighborCells.add(getSCell(grid, t, i));
+        neighborCells.add(getSECell(grid, t, i));
         return neighborCells;
     }
 }
