@@ -28,8 +28,8 @@
       <file leaf-file-name="ConwaysGameOfLife.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="945">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.07575758" vertical-offset="165" max-vertical-offset="1035">
+              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -501,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/detroitlabs/conwaysgameoflife/ConwaysGameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="945">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.07575758" vertical-offset="165" max-vertical-offset="1035">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding />
         </state>
       </provider>

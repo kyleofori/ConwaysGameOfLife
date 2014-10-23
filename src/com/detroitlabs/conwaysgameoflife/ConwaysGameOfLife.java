@@ -6,6 +6,12 @@ package com.detroitlabs.conwaysgameoflife;
 public class ConwaysGameOfLife {
     public static void main(String[] args) {
 
+        //This is definitely in experimental stages right now.
+        //Two things going on: one is this boolean 2-D array theSetup,
+        //and the other is the Grid ConwayGrid / Cell[][] theStartGrid.
+        //The latter doesn't need to be two separate things to set,
+        //and the former is currently only for display purposes.
+        //Work on these next time you work on ConwaysGameOfLife.
 
         Grid ConwayGrid = new Grid();
 
